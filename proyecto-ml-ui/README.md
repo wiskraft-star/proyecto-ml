@@ -20,3 +20,4 @@ Este proyecto es un esqueleto profesional de interfaz (Next.js App Router + Tail
 Cuando confirmes que esta estética te gusta, conectamos datos desde Supabase:
 - vistas para ventas / gastos / stock
 - métricas netas (tu “calculadora real de ganancia”)
+deploy trigger
