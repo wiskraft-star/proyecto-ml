@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Theme (Soft + Sobrio) ----------
+   Default: Light (fondo blanco)
+   Dark mode: agrega class="dark" en <html>
+------------------------------------------- */
+
+:root {
+  --bg: 255 255 255;        /* #FFFFFF */
+  --panel: 248 250 252;     /* #F8FAFC */
+  --panel2: 241 245 249;    /* #F1F5F9 */
+  --border: 226 232 240;    /* #E2E8F0 */
+  --text: 15 23 42;         /* #0F172A */
+  --muted: 71 85 105;       /* #475569 */
+  --accent: 47 111 237;     /* #2F6FED (Primary) */
+  --good: 34 197 94;        /* #22C55E */
+  --warn: 245 158 11;       /* #F59E0B */
+  --bad: 239 68 68;         /* #EF4444 */
+}
+
+.dark {
+  --bg: 11 18 32;           /* #0B1220 */
+  --panel: 17 26 46;        /* #111A2E */
+  --panel2: 22 33 58;       /* #16213A */
+  --border: 36 50 74;       /* #24324A */
+  --text: 229 231 235;      /* #E5E7EB */
+  --muted: 148 163 184;     /* #94A3B8 */
+  --accent: 122 167 255;    /* #7AA7FF (Primary) */
+  --good: 74 222 128;       /* #4ADE80 */
+  --warn: 251 191 36;       /* #FBBF24 */
+  --bad: 248 113 113;       /* #F87171 */
+}
+
+/* Base look */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+}
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, .25);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-track { background: transparent; }
+
+/* utility: subtle grid for dashboard hero areas */
+.bg-grid {
+  background-image: radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+.dark .bg-grid {
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+}
