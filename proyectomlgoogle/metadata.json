@@ -1,5 +1,0 @@
-
-{
-  "name": "Mercado Libre Net Margin Calculator",
-  "description": "A web application to measure the real net margin of a Mercado Libre account by integrating sales, payments, COGS, and supply costs. This application provides a comprehensive dashboard for financial metrics and allows for data synchronization and management."
-}
